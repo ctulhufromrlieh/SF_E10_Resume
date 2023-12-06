@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+
+@font-face {
+    src: url('../fonts/RuslanDisplay-Regular.ttf');
+    font-family: 'RuslanDisplay-Regular';
+}
+
+*{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+
+    display:flex; 
+    flex-direction:column;    
+}
+
+header{
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: red 1px solid;
+}
+
+.flex-width-small{
+    display: none;
+}
+
+.header-title{
+    font-family: 'RuslanDisplay-Regular', Helvetica, Arial, sans-serif;
+    font-size: 2.0em;
+}
+
+.content{
+    max-height: 800px;
+    margin: 0 auto;
+    /* height: max-content; */
+    border: yellow 1px solid;
+
+    display:flex; 
+    flex-direction:column;      
+    flex-grow: 1;    
+}
+
+main{
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.skill-elem{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.skill-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.skill-subelem{
+    /* min-width: 200px;
+    max-width: 400px; */
+    /* max-width: 400px; */
+    /* min-height: 100px;
+    max-height: 200px; */
+
+    width: 200px;
+    /* width: 100vw; */
+    /* max-width: 200px; */
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    margin: 5px;
+
+    border: purple 1px solid;
+}
+
+.skill-title{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    /* display: block; */
+    font-size: 2em;
+}
+
+.skill-content{
+    font-family: Arial, sans-serif;
+    /* display: block; */
+}
+
+.wrapper{
+    flex-grow: 1;
+    border: blue 1px solid;
+}
+
+footer{
+    /* height: 40px; */
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+    border: red 1px solid;
+
+    /* position: sticky; */
+    /* bottom: 200px; */
+}
+
+/* @media screen and (max-width: 600px) { */
+@media screen and (max-width: 250px) {
+    .flex-width-small{
+        display: flex;
+    }
+    
+    .flex-width-large{
+        display: none;
+    }
+
+    .skill-subelem{
+        /* width: calc(100vw-10px); */
+        /* width: auto; */
+        width: 100vw; 
+        /* overflow-x: scroll; */
+        /* width: 100%; */
+        overflow-x: hidden;
+        margin: 0;
+        border-radius: 0;
+        height: auto;
+    }
+}
