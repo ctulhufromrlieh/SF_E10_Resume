@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+
+@font-face {
+    src: url('../fonts/RuslanDisplay-Regular.ttf');
+    font-family: 'RuslanDisplay-Regular';
+}
+
+*{
+    overflow-x: hidden;
+}
+
+body{
+    display:flex; 
+    flex-direction:column;    
+    margin: 0;
+    min-height: 100vh;
+}
+
+header{
+    align-items: center;
+    background-color: #191919;
+    color: #999;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-width-small{
+    display: none;
+}
+
+.header-title{
+    font-family: 'RuslanDisplay-Regular', Helvetica, Arial, sans-serif;
+    font-size: 2.0em;
+}
+
+.content{
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    display:flex; 
+    flex-direction:column;      
+    flex-grow: 1;
+    margin: 0 auto;
+    width: min(800px, 100%)
+    
+}
+
+main{
+    padding: 20px;
+}
+
+.skill-elem{
+    padding-bottom: 20px;
+}
+
+.collapsator{
+    cursor: pointer;
+}
+
+.skill-items{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-subelem{   
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    height: 50px;
+    width: 200px;
+}
+
+.skill-title{
+    background-color: #bbb;
+    color: #555;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.skill-content{
+    background-color: #ddd;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.skill-content>a, a:visited{
+    color: #555;
+}
+
+.wrapper{
+    flex-grow: 1;
+}
+
+footer{
+    align-items: center;
+    background-color: #191919;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    position: sticky;
+}
+
+@media screen and (max-width: 250px){
+    main{
+        padding: 0;
+    }
+
+    .flex-width-small{
+        display: flex;
+    }
+    
+    .flex-width-large{
+        display: none;
+    }
+
+    .skill-subelem{
+        border-radius: 0;
+        height: auto;
+        margin: 2px 0;        
+        overflow-x: hidden;
+        padding: 5px;
+        width: 100vw; 
+    }
+}
+
+@media screen and (max-height: 450px){
+    .collapsible{
+        display: none;
+    }
+}
