@@ -30,7 +30,7 @@ header{
 
 .header-title{
     font-family: 'RuslanDisplay-Regular', Helvetica, Arial, sans-serif;
-    font-size: 2.0em;
+    font-size: 2em;
 }
 
 .content{
@@ -67,9 +67,10 @@ main{
     align-items: center;
     border-radius: 10px;
     display: flex;
+    height: 50px;
     justify-content: center;
     margin: 5px;
-    height: 50px;
+    overflow-y: hidden;
     width: 200px;
 }
 
@@ -77,13 +78,14 @@ main{
     background-color: #bbb;
     color: #555;
     font-family: 'Sofia Sans Condensed', sans-serif;
-    font-size: 2em;
+    font-size: 1.0em;
 }
 
 .skill-content{
     background-color: #ddd;
     color: #444;
     font-family: Arial, sans-serif;
+    font-size: 0.9em;
 }
 
 .skill-content>a, a:visited{
@@ -129,6 +131,6 @@ footer{
 
 @media screen and (max-height: 450px){
     .collapsible{
-        display: none;
-    }
+        --collapse-on-start: true;
+     }
 }
